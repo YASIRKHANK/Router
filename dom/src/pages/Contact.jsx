@@ -5,7 +5,7 @@ const Contact = () => {
 
 
   const variable=useNavigate();
-  const toQari=()=>{
+  const toQari=(props)=>{
     variable('/qari')
   }
 
@@ -47,7 +47,11 @@ const Contact = () => {
         <p><strong>Address:</strong> 123 Main Street, City, Country</p>
       </div>
 
-      <></>
+      {/* <div className='py-10 text-center flex flex-col gap-y-5'>
+              <p className='bg-red-300'>Name is {props.data.name}</p>
+                <p className='bg-red-300'> the Address is{props.data.address}</p>
+
+            </div>  */}
     </div>
   );
 };

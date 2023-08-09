@@ -2,6 +2,7 @@
 import React from 'react';
 import pic from '../images/jaredd.jpg';
 import { AiOutlineCopyrightCircle } from 'react-icons/ai'
+import Props from '../Components/Props';
 
 
 const img = {
@@ -10,6 +11,11 @@ const img = {
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center center',
 };
+
+const data={
+  name:"zahid",
+  address:"Buner"
+}
 
 const Home = () => {
   return (
@@ -96,6 +102,8 @@ const Home = () => {
         </div>
         </div>
       </div>
+
+      <Props data={data}/>
 
 
 
