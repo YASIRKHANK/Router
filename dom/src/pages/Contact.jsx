@@ -1,6 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+
+
+  const variable=useNavigate();
+  const toQari=()=>{
+    variable('/qari')
+  }
+
   return (
     <div className="container mx-auto p-4  bg-gradient-to-r from-[#AE8625] via-[#F7EF8A] to-[#D2AC47] ">
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
@@ -28,7 +36,7 @@ const Contact = () => {
             <textarea id="message" name="message" rows="4" className="w-full px-3 py-2 border rounded outline-none" required></textarea>
           </div>
 
-          <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+          <button onClick={toQari} type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
         </form>
       </div>
 
@@ -38,6 +46,8 @@ const Contact = () => {
         <p><strong>Email:</strong> info@atmosbit.com</p>
         <p><strong>Address:</strong> 123 Main Street, City, Country</p>
       </div>
+
+      <></>
     </div>
   );
 };
