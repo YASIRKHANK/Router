@@ -9,12 +9,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Qari from './pages/Qari';
 import Counter from './Components/Counter';
-
-
-
-
-
-
+import Detail from './pages/Detail';
 
 function App() {
   
@@ -29,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path='/qari' element={<Qari/>}></Route>
           <Route path='/counter' element={<Counter/>}></Route>
+          <Route path='/detail' element={<Detail/>}></Route>
         </Routes>
       </Router>
 
@@ -38,3 +34,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+

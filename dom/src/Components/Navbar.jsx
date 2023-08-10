@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { FaTimes, FaBars, FaSearch } from "react-icons/fa";
 import '../Style/NavBar.css'
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import img from '../images/group.png'
 const NavBar = () => {
   const [icon, seticon] = useState(false);
@@ -12,8 +12,8 @@ const NavBar = () => {
 
   return (
     <div className="asad-navbar bg-[#000032]  w-full py-2 flex justify-between ">
-      <img src={img}/>
-      
+      <img src={img} />
+
       <div className=" cursor-pointer w-[33.33%]  gap-x-3 flex items-center justify-start  ">
         <h1 className="text-[25px] font-bold bg-gradient-to-r from-[#AE8625] via-[#F7EF8A] to-[#D2AC47]  text-transparent bg-clip-text">
           HORSELUX
@@ -63,7 +63,19 @@ const NavBar = () => {
             </Link>
           </li>
 
+          <li>
+            <Link
+              to="/detail"
+              className="text-white font-[Josefin Sans]  font-normal text-[20px]"
+              onClick={() => seticon(!icon)}
+            >
+              Detail
+            </Link>
+          </li>
 
+
+
+      
         </ul>
       </div>
 

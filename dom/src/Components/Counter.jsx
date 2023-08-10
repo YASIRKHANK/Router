@@ -17,7 +17,11 @@ const CounterApp = (props) => {
     };
 
     const decrement = () => {
-        setCount(count - 1);
+        if(count > 0)
+        {
+            setCount(count - 1);
+        }
+       
     };
 
     const reset = () => {
@@ -31,7 +35,7 @@ const CounterApp = (props) => {
                 <h1 className='font-extrabold text-4xl text-center text-white  '>Counter App</h1>
                 <span className='text-center text-9xl text-white'>{count}</span>
                 <div className='flex justify-between'>
-                    <button onClick={decrement} className='border rounded-full bg-black text-white w-10 h-10 '>-</button>
+                    <button onClick={decrement} className='border rounded-full bg-black text-white w-10 h-10' disabled={count === 0}>-</button>
                     <button onClick={increment} className='border rounded-full bg-black text-white w-10 h-10'>+</button>
                     <button onClick={reset} className='border rounded-full bg-black text-white w-11 h-11 '>Reset</button>
                 </div>
