@@ -7,7 +7,7 @@ const Qari = () => {
     const [next, setNext] = useState(true);
     const additionalData = [
         "yasir khan",
-        "yAfridi",
+        "Afridi",
         "i am from",
         "mardan"
     ];

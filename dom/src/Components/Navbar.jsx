@@ -73,9 +73,15 @@ const NavBar = () => {
             </Link>
           </li>
 
-
-
-      
+          <li>
+            <Link
+              to="/api"
+              className="text-white font-[Josefin Sans]  font-normal text-[20px]"
+              onClick={() => seticon(!icon)}
+            >
+              Api
+            </Link>
+          </li> 
         </ul>
       </div>
 
@@ -85,7 +91,8 @@ const NavBar = () => {
           {!icon ? <FaBars /> : <FaTimes />}
         </span>
       </div>
-      <div className="flex gap-x-3">
+
+      <div className=" hidden  md:block md:flex gap-x-3 ml-16">
         <button className="text-white  border rounded-full px-2 py-1">Sign in</button>
         <button className="text-white  border rounded-full px-2 py-1">Sign Up</button>
 

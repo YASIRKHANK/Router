@@ -10,8 +10,12 @@ import Contact from './pages/Contact';
 import Qari from './pages/Qari';
 import Counter from './Components/Counter';
 import Detail from './pages/Detail';
+import Api from './pages/Api';
+
+
 
 function App() {
+  
   
   return (
     <>
@@ -25,6 +29,8 @@ function App() {
           <Route path='/qari' element={<Qari/>}></Route>
           <Route path='/counter' element={<Counter/>}></Route>
           <Route path='/detail' element={<Detail/>}></Route>
+          <Route path='/api' element={<Api/>}></Route>
+
         </Routes>
       </Router>
 
